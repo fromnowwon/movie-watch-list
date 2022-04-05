@@ -21,6 +21,11 @@
 
 <br/>
 
+## Tech stack
+- Client: React, TypeScript, CSS
+
+<br/>
+
 ### 레퍼런스보다 개선된 사항
 - TypeScript 환경에서 작업하였습니다.
 - 한글로 검색이 가능합니다.
@@ -29,47 +34,37 @@
 
 <br/>
 
-## Tech stack
-- Client: React, TypeScript
-- Backend: -
-- DB: -
-
-<br/>
 
 ## Tree
 ```
 movie-watchlist
-├── README.md
-├── package-lock.json
-├── package.json
-├── public
+├── public (정적 자원 관리)
 │   ├── images
 │   ├── index.html
-│   ├── manifest.json
 │   └── robots.txt
 ├── src
-│   ├── App.css
+│   ├── App.css 
 │   ├── App.tsx
-│   ├── Config.js
-│   ├── components
-│   │   ├── Add.tsx
-│   │   ├── Header.tsx
-│   │   ├── Main.tsx
-│   │   ├── MovieCard.tsx
-│   │   ├── MovieControls.tsx
-│   │   ├── NotFound.tsx
-│   │   ├── ResultCard.tsx
-│   │   ├── Search.tsx
-│   │   ├── Watched.tsx
-│   │   └── Watchlist.tsx
-│   ├── context
-│   │   ├── AppReducer.tsx
-│   │   └── GlobalState.tsx
 │   ├── index.tsx
-│   ├── lib
-│   │   └── font-awesome
-│   ├── logo.svg
-│   ├── react-app-env.d.ts
-│   └── reportWebVitals.ts
+│   ├── Config.js
+│   ├── components (컴포넌트 관리)
+│   │   ├── Header.tsx (헤더)
+│   │   ├── Add.tsx (영화 추가 페이지)
+│   │   ├── Main.tsx (메인 페이지)
+│   │   ├── Search.tsx (검색창 + 결과)
+│   │   ├── ResultCard.tsx (검색 결과)
+│   │   ├── Watchlist.tsx (와치리스트 페이지)
+│   │   ├── Watched.tsx (관람 완료 페이지)
+│   │   ├── MovieCard.tsx (와치리스트, 관람완료 페이지 영화 리스트)
+│   │   ├── MovieControls.tsx (영화 리스트 삭제/이동 버튼)
+│   │   └── NotFound.tsx (404 페이지)
+│   ├── context (Context 관리)
+│   │   ├── AppReducer.tsx (전역 상태에 대한 리듀서)
+│   │   └── GlobalState.tsx (전역 상태 관리)
+│   └── lib (라이브러리 관리)
+│       └── font-awesome
+├── README.md
+├── package.json
+├── package-lock.json
 └── tsconfig.json
 ```
