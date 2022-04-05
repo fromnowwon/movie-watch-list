@@ -16,15 +16,16 @@
 
 <br/>
 
+## Tech stack
+- Client: React, TypeScript, CSS
+
+<br/>
+
 ## Reference
 📎 [Create a Movie Watchlist with React Hooks, Context API and localStorage](https://youtu.be/1eO_hNYzaSc)
 
 <br/>
 
-## Tech stack
-- Client: React, TypeScript, CSS
-
-<br/>
 
 ### 레퍼런스보다 개선된 사항
 - TypeScript 환경에서 작업하였습니다.
