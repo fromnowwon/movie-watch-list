@@ -54,13 +54,13 @@ export const ResultCard = ({ movie } : {movie: Imovie}) => {
 						onClick={() => addMovieToWatchlist(movie) }
 						disabled={watchlistDisabled}
 					>
-						Add to WatchList
+						와치리스트
 					</button>
 					<button className="btn" 
 						onClick={() => addMovieToWatched(movie) }
 						disabled={watchedDisabled}
 					>
-						Add to Watched
+						관람 완료
 					</button>
 				</div>
 			</div>
