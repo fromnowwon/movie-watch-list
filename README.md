@@ -9,7 +9,8 @@
 <br />
 
 ## Introduce
-- 볼 영화 리스트(Watch list), 본 영화 리스트(Watched list)를 정리할 수 있는 애플리케이션입니다.
+- 위시리스트처럼 영화의 와치리스트를 만들어 관리할 수 있는 애플리케이션입니다.
+- 볼 영화 리스트(Watch list), 본 영화 리스트(Watched list)를 정리할 수 있습니다.
 - Context를 사용하여 전역 데이터를 관리하였습니다.
 - Watch list, Watched list 정보는 Local storage에 저장됩니다.
 - API: [TMDB](https://www.themoviedb.org/?language=ko)
@@ -28,6 +29,7 @@
 
 
 ### 레퍼런스보다 개선된 사항
+- useMemo를 사용하여 Context API로 인한 불필요한 리렌더링을 방지하였습니다. (최적화)
 - TypeScript 환경에서 작업하였습니다.
 - 한글로 검색이 가능합니다.
 - 모바일에서 레이아웃이 틀어지지 않도록 수정하였습니다.
@@ -69,3 +71,4 @@ movie-watchlist
 ├── package-lock.json
 └── tsconfig.json
 ```
+
