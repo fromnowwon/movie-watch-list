@@ -22,6 +22,11 @@ export const GlobalContext = createContext(initialState);
 
 // provider components
 export const GlobalProvider = (props: any) => {
+	// useReducer를 사용하여 상태 업데이트 로직 분리하기
+	// state: 컴포넌트에서 사용할 수 있는 상태,
+	// dispatch: 액션을 발생시키는 함수,
+	// AppReducer: Reducer 함수
+	// initialState: 초기 상태 값
 	const [state, dispatch] = useReducer(AppReducer, initialState);
 
 	// 저장한 리스트가 남아있도록 localStorage에 저장
@@ -49,16 +54,18 @@ export const GlobalProvider = (props: any) => {
 		dispatch({ type: "REMOVE_FROM_WATCHED", payload: id })
 	}
 
+	const value = React.useMemo(() => ({ 
+		watchlist: state.watchlist,
+		watched: state.watched,
+		addMovieToWatchlist,
+		removeMovieFromWatchlist,
+		addMovieToWatched,
+		moveToWatchlist,
+		removeFromWatchlisted,
+	}), [state]);
+
 	return (
-		<GlobalContext.Provider value={{ 
-			watchlist: state.watchlist, 
-			watched: state.watched, 
-			addMovieToWatchlist,
-			removeMovieFromWatchlist,
-			addMovieToWatched,
-			moveToWatchlist,
-			removeFromWatchlisted,
-		}}>
+		<GlobalContext.Provider value={value}>
 			{props.children}
 		</GlobalContext.Provider>
 	)
