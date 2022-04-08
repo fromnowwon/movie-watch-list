@@ -17,7 +17,7 @@
 
 <br/>
 
-## Tech stack
+## Development Environment
 - Client: React, TypeScript, CSS
 
 <br/>
@@ -46,7 +46,7 @@ movie-watchlist
 │   ├── index.html
 │   └── robots.txt
 ├── src
-│   ├── App.css 
+│   ├── App.css
 │   ├── App.tsx
 │   ├── index.tsx
 │   ├── Config.js
