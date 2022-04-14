@@ -22,6 +22,22 @@
 
 <br/>
 
+## 최적화
+- Context
+- Lodash - Debounce 메서드로 검색 폼 최적화
+
+### Before
+
+![](./public/images/lodash-debounce-opt-watch-list-1.gif)
+
+<br />
+
+### After
+
+![](./public/images/lodash-debounce-opt-watch-list-2.gif)
+
+<br />
+
 ## Reference
 📎 [Create a Movie Watchlist with React Hooks, Context API and localStorage](https://youtu.be/1eO_hNYzaSc)
 
