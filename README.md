@@ -25,7 +25,7 @@
 ## 최적화
 - Context
 - Lodash 라이브러리
-	- Debounce 메서드로 검색 폼 최적화
+	- debounce 메서드로 검색 폼 최적화
 
 <br />
 
